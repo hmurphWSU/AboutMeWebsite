@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+<!--
+    
+    Build Your Own Website Contact Me Page
+    Author: Hunter Murphy
+    Date: March 15, 2022
+
+    Filename: byow_contact_me.html
+    -->
+        <meta charset="utf-8" />
+        <title>Contact Me</title>
+        <link href = "styles/byow_reset.css" rel = "stylesheet" />
+        <link href = "styles/byow_styles.css" rel = "stylesheet" />
+      </head>
+
+      <body>
+        <header>
+            <!-- Navigation Links -->
+        <nav class = "horizontal">
+            <ul>
+              <li><a href= "../index.html">Home</a></li>
+              <li><a href= "byow_about_me.html">About Me</a></li>
+              <li><a href= "byow_contact_me.html">Contact Me</a></li>
+              <li><a href = "byow_hobbies_work.html">Hobbies & Work</a></li>
+              <li><a href= "../cs2350_assignments/cs_cas.html" target = "_blank">Assignments Page</a></li>
+            </ul>
+          </nav>
+        </header>
+
+            <!-- 1st (and only) row of content, 2 columns -->
+          <div class = "row1">
+            <h1> Contact Me </h1>
+                <div class = "col-1-2">
+                    <p> If you wish to contact me, you can email me at 
+                        <a href = "mailto:huntermurphy@mail.weber.edu"> huntermurphy@mail.weber.edu</a> or fill out the 
+                        form to the right and I will reach out as soon as I can.
+                    </p>
+                </div>
+                <!-- form for user to provide information -->
+              <div class = "col-1-2">
+                  <form action ="https://icarus.cs.weber.edu/~linda/cs2350/submit_pet1.php" method = "post">
+                  <label for = "name"> Your Name* </label>
+                  <input id = "name" name = "userName" type = "text" placeholder = "Your Name" required>
+                  <label for = "phone"> <br /> Phone Number* </label>
+                  <input id = "phone" name = "userNumber" type = "tel" 
+                  placeholder = "(nnn) nnn-nnnn"
+                   required pattern = "^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+                  <label for = "email"> <br /> Email* </label>
+                  <input id = "email" name = "userEmail" type = "email" required
+                  placeholder = "example@example.com">
+                  <br />
+                  <input name = "submit" value = "Submit" type = "submit">
+                  <input name = "reset" value = "Reset" type = "reset">
+                  </form>
+              </div>
+            </div>
+
+          <footer>
+              <address>
+                Hunter Murphy &#9827; CS 2350 &#9827; Client Side Web Development
+              </address>
+          </footer>
+      </body>
+
+</html>

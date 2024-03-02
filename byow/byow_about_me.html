@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+<!--
+    
+    Build Your Own Website About Me Page
+    Author: Hunter Murphy
+    Date: March 15, 2022
+
+    Filename: byow_about_me.html
+    -->
+        <meta charset="utf-8" />
+        <title>About Me</title>
+        <link href = "styles/byow_reset.css" rel = "stylesheet" />
+        <link href = "styles/byow_styles.css" rel = "stylesheet" />
+      </head>
+
+      <body>
+        <header>
+          <!-- Navigation Links -->
+        <nav class = "horizontal">
+            <ul>
+              <li><a href= "../index.html">Home</a></li>
+              <li><a href= "byow_about_me.html">About Me</a></li>
+              <li><a href= "byow_contact_me.html">Contact Me</a></li>
+              <li><a href = "byow_hobbies_work.html">Hobbies & Work</a></li>
+              <li><a href= "../cs2350_assignments/cs_cas.html" target = "_blank">Assignments Page</a></li>
+            </ul>
+          </nav>
+        </header>
+
+          <!-- 1st row of content -->
+          <div class = "row1">
+            <h1> About Me </h1>
+            <!-- Column 1 holds a paragraph about me -->
+              <div class = "col-1-1">
+                  <p>
+                    My name is Hunter, and I was born on December 23, 2002 in Bitburg, Germany. Now, you may be 
+                    wondering whether or not I speak German, and the answer is no, I don't actually speak German despite being born in Germany. 
+                    My dad was in the airforce and was stationed in Germany at the time. We stayed in Germany for a little under 
+                    2 years before moving to Roy, Utah and still living there to this day. Although I don't even remember because 
+                    I was very young at the time, my parents got a divorce in the early 2000s despite my dad living with us for many years to
+                    come. However, as of a couple years ago, my dad has moved back to Indiana where he lived originally to take 
+                    care of his mom. I have 3 brothers and many cousins. Below I have pictures of a project I did in junior
+                    high, and pictures of my family.
+                  </p>
+              </div>
+            </div>
+            <!-- Second row of content -->
+            <div class = "row2">
+              <!-- 4 Columns of different pictures regarding me and my family -->
+              <div class = "col-1-4">
+                <figure>
+                <img src = "images/schoolproject.JPG" alt = "School Project">
+                <figcaption>School project about myself in junior high (2014)</figcaption>
+              </figure>
+              </div>
+              <div class = "col-1-4">
+                <figure>
+                <img src = "images/weddingpicture.JPG" alt = "Wedding Picture">
+                <figcaption>Picture of almost my entire family at my brother's wedding (2015)</figcaption>
+              </figure>
+              </div>
+              <div class = "col-1-4">
+                <figure>
+                <img src = "images/familypicture1.JPG" alt = "Family Picture 1">
+                <figcaption>Two of my brothers, my mom, my sister in law, and me (2020)</figcaption>
+              </figure>
+              </div>
+
+              <div class = "col-1-4">
+                <!-- Image map on our faces that take the user to our facebook accounts, all map links target new tabs -->
+                <map name = "Picture2Nav">
+                  <area shape = "circle" coords = "203, 117, 20" href = "https://www.facebook.com/hunter.murphy.900388" target = "_blank" alt = "Me" />
+                  <area shape = "circle" coords = "66, 120, 20" href = "https://www.facebook.com/kristytude" target = "_blank" alt = "Mom" />
+                  <area shape = "circle" coords = "110, 43, 15" href = "https://www.facebook.com/camron.murphy.35" target = "_blank" alt = "Brother" />
+                  <area shape = "circle" coords = "57, 34, 15" href = "https://www.facebook.com/DevKyleMurphy" target = "_blank" alt = "Brother" />
+                </map>
+                <figure>
+                <img src = "images/familypicture2.JPG" alt = "Family Picture 2" usemap = "#Picture2Nav">
+                <figcaption>Me, two of my brothers, and my mom (2021)</figcaption>
+              </figure>
+              </div>
+            </div>
+
+          <footer>
+              <address>
+                Hunter Murphy &#9827; CS 2350 &#9827; Client Side Web Development
+              </address>
+          </footer>
+      </body>
+
+</html>

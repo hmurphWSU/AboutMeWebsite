@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/*
+    
+    Build Your Own Website Style Page
+    Author: Hunter Murphy
+    Date: March 15, 2022
+
+    Filename: byow_styles.css
+    */
+
+/* Change html background color */
+html {
+    background: rgb(36, 36, 36);
+}
+
+/* Set size and colors for the body of the site */
+body {
+    background-color: black;
+    margin: 0px auto;
+    height: 100%;
+    min-width: 320px;
+    max-width: 1200px;
+    width: 100%;
+    color: white;
+}
+
+/* Make sure all images are full size within their div container and vertically aligned */
+div img {
+    width: 100%;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+
+/* Make all form elements larger */
+div form {
+    font-size: 1.3em;
+}
+
+/* Form element formatting */
+input:focus, select:focus, textarea:focus {
+    background-color: rgb(255, 255, 180);
+ }
+ 
+ input#name:focus:valid, input#phone:focus:valid, input#email:focus:valid {
+    background: rgb(220, 255, 220)  right / contain no-repeat;
+ }
+ 
+ 
+ input#name:focus:invalid, input#phone:focus:invalid, input#email:focus:invalid {
+    background: rgb(255, 230, 230)  right / contain no-repeat;
+ }
+
+ /* Navigation List formatting */
+nav li {
+    display: block;
+    float: left;
+    width: 20%;
+}
+ 
+ nav a {
+    display: block;
+}
+
+
+
+nav.horizontal a {
+    background-color: rgba(255, 217, 0, 0.678);
+    font-size: 1.4em;
+    line-height: 1.8em;
+    text-align: center;
+}  
+ 
+ nav.horizontal a:link, 
+ nav.horizontal a:visited {
+    color: white;
+    text-decoration: none;
+}
+ 
+ nav.horizontal a:hover, 
+ nav.horizontal a:active {
+    background-color: rgb(71, 52, 29);
+}   
+
+/* Figure formatting */
+figure {
+    width: 100%;;
+}
+
+figcaption {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float, change padding, and box sizing for all div elements with class col */
+div[class^="col-"] {
+    float: left;
+    padding: 2%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* Change font size of p elements within div */
+div p {
+    font-size: 1.3em;
+}
+
+/* Change formatting of h2 elements */
+h2 {
+    font-size: 1.6em;
+    text-align: center;
+    color: gold;
+}
+
+/* Set size of div elements with class col-1- */
+div.col-1-1 {width: 100%;}
+div.col-1-2 {width: 50%;}
+div.col-1-4 {width: 25%;}
+
+/* Change formatting of h1 elements */
+h1 {
+    text-align: center;
+    color: gold;
+    font-size: 2em;
+}
+
+/* Change formatting of the table */
+table.classes {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Make each table row 30px tall */
+table.classes tr {
+    height: 30px;
+}
+
+/* Add an outline, align, and padding to all cells */
+table.classes th, table.classes td {
+    border: 1px solid gold;
+    vertical-align: top;
+    padding: 5px;
+}
+
+/* Footer formatting */
+body > footer address {
+    clear: both;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+ }
